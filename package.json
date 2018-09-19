@@ -1,0 +1,26 @@
+{
+  "name": "@llw/rps-cheat-strategy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "llw-makers",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "rps-stuff": "^1.0.0",
+    "@llw/rps-rest-io": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llw-makers/rps-cheat-strategy"
+  },
+  "dependencies": {
+    "@types/node": "^10.10.1"
+  }
+}
