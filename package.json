@@ -1,5 +1,5 @@
 {
-  "name": "@llw/rps-cheat-strategy",
+  "name": "@llw/rps-rest-strategy",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/llw-makers/rps-cheat-strategy"
+    "url": "https://github.com/llw-makers/rps-rest-strategy"
   },
   "dependencies": {
     "@types/node": "^10.10.1"

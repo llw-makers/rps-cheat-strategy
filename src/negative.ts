@@ -1,8 +1,8 @@
 import { RPSStrategyMove, RPSAction, RPSTurn } from 'rps-stuff';
-import { CheatStrategy, CheatStrategyContext, wait } from './cheat';
+import { RESTStrategy, RESTStrategyContext, wait } from './rest';
 
-export class NegativeStrategy extends CheatStrategy {
-  async decideMove(turns: RPSTurn[]): Promise<RPSStrategyMove<CheatStrategyContext>> {
+export class NegativeStrategy extends RESTStrategy {
+  async decideMove(turns: RPSTurn[]): Promise<RPSStrategyMove<RESTStrategyContext>> {
     await wait(this.timeout);
     console.log("Deciding move now");
     switch (this.server.getBestGuess()) {

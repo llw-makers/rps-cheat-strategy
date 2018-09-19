@@ -10,13 +10,13 @@ export function wait(ms: number) {
   });
 }
 
-export interface CheatStrategyContext {
+export interface RESTStrategyContext {
   isCheat: true;
   didGuess: boolean;
   guessedAction?: RPSAction;
 }
 
-export class CheatStrategy extends EventEmitter implements RPSStrategy {
+export class RESTStrategy extends EventEmitter implements RPSStrategy {
   constructor(public server: RESTInput) {
     super();
   }
@@ -28,7 +28,7 @@ export class CheatStrategy extends EventEmitter implements RPSStrategy {
   cleanup() {
     this.fallback.cleanup();
   }
-  async decideMove(turns: RPSTurn[]): Promise<RPSStrategyMove<CheatStrategyContext>> {
+  async decideMove(turns: RPSTurn[]): Promise<RPSStrategyMove<RESTStrategyContext>> {
     await wait(this.timeout);
     console.log("Deciding move now");
     switch (this.server.getBestGuess()) {
